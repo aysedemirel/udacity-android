@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.udacityproject.android.erdalbakkal.MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/market"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/erdalBakkal"
+        android:textSize="36sp"
+        android:textColor="#ce3a3c"
+        android:fontFamily="casual"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cay"
+        android:textSize="25sp"
+        android:textColor="#c19906"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher_location"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adres"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher_phone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0212 555 55 55"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/erdal"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/saidErdal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:fontFamily="cursive"
+            android:text="@string/erdalSozu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saidErdal"
+            android:layout_toRightOf="@id/profile_image"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="@string/devam" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher_time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="9.00-16.00"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="TR"
+            android:textSize="15sp"
+            android:background="#d74949"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@id/button2"
+            android:text="ENG"
+            android:textSize="15sp"
+            android:background="#1eb3d1"/>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

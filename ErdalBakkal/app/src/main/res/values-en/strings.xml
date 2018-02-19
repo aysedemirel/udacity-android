@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Erdal Grocery Store</string>
+    <string name="adres">Kirecburnu,Istanbul,Turkey</string>
+    <string name="erdalBakkal">ERDAL GROCERY STORE</string>
+    <string name="dil_degistir">Language English</string>
+    <string name="devam">"Erdal says this. That grocery store is this grocery store. Everything you look for is here. "</string>
+    <string name="erdalSozu">\"Her genç kızın hayalinde beyaz önlüklü bir bakkal yatar.\"</string>
+    <string name="cay">\"Drink your tea in Erdal Grocery Store.\"</string>
+</resources>

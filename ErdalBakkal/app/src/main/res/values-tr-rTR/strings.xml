@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Erdal Bakkal</string>
+    <string name="adres">Kireçburnu,İstanbul,Türkiye</string>
+    <string name="erdalBakkal">ERDAL BAKKAL</string>
+    <string name="dil_degistir">Dil Türkçe</string>
+    <string name="devam">Der Erdal Bakkal.O bakkal bu bakkal.Aradığınız her şey burada.</string>
+    <string name="erdalSozu">\"Her genç kızın hayalinde beyaz önlüklü bir bakkal yatar.\"</string>
+    <string name="cay">\"Çay Erdal Bakkal\'da içilir!\"</string>
+</resources>
