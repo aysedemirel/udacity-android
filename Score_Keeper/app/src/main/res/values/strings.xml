@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="teamA">TEAM A</string>
+    <string name="teamB">TEAM B</string>
+    <string name="scoreA">0</string>
+    <string name="faulA">0</string>
+    <string name="scoreB">0</string>
+    <string name="faulB">0</string>
+    <string name="goal">GOAL</string>
+    <string name="faul">FAUL</string>
+    <string name="reset">RESET</string>
+    <string name="winner">SHOW WINNER</string>
+    <string name="spinner_title">Select Team</string>
 </resources>
