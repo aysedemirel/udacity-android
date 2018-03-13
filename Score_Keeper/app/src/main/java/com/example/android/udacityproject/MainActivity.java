@@ -12,11 +12,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreA = 0, faulA = 0;
-    int scoreB = 0, faulB = 0;
+    int scoreA = 0;
+    int faulA = 0;
+    int scoreB = 0;
+    int faulB = 0;
     String mes = "";
-    boolean team_a=false, team_b=false;
-    String teamTextA="A", teamTextB="B";
+    boolean team_a=false;
+    boolean team_b=false;
+    String teamTextA="A";
+    String teamTextB="B";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,13 +45,11 @@ public class MainActivity extends AppCompatActivity {
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Write Team Name");
-
         // Set up the input
         final EditText input = new EditText(this);
         // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
         input.setInputType(InputType.TYPE_CLASS_TEXT);
         builder.setView(input);
-
         // Set up the buttons
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -81,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
                 dialog.cancel();
             }
         });
-
         builder.show();
     }
     public void increaseA(View view) {
