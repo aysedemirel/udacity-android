@@ -9,15 +9,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    int count=1;
-    boolean optionOne=false;
-    boolean optionTwo=false;
-    boolean optionThree=false;
-    boolean optionFour=false;
-    boolean checkOne=false;
-    boolean checkTwo=false;
-    boolean checkThree=false;
-    boolean checkFour=false;
+    private int count=1;
+    private boolean optionOne=false;
+    private boolean optionTwo=false;
+    private boolean optionThree=false;
+    private boolean optionFour=false;
+    private boolean checkOne=false;
+    private boolean checkTwo=false;
+    private boolean checkThree=false;
+    private boolean checkFour=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,10 +73,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 1", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money9));
             }
         }
         else if(count==2)
@@ -97,10 +93,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 2", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money8));
             }
         }
         else if(count==3)
@@ -122,10 +114,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 3", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money7));
             }
         }
         else if(count==4)
@@ -147,10 +135,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 4", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money6));
             }
         }
         else if(count==5)
@@ -172,10 +156,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 5", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money5));
             }
 
         }
@@ -194,10 +174,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 6", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money4));
             }
         }
         else if(count==7)
@@ -216,19 +192,16 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 7", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money3));
             }
 
         }
         else if(count==8)
         {
-
             CheckBox chk1=findViewById(R.id.checkbox_1);
+            CheckBox chk2=findViewById(R.id.checkbox_2);
+            CheckBox chk3=findViewById(R.id.checkbox_3);
             CheckBox chk4=findViewById(R.id.checkbox_4);
-            if(chk1.isChecked() && chk4.isChecked())
+            if(chk1.isChecked() && chk4.isChecked() && !chk2.isChecked() && !chk3.isChecked())
             {
                 Toast.makeText(getApplicationContext(),"Correct Answer 8",Toast.LENGTH_SHORT).show();
                 count=1;
@@ -243,14 +216,6 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 Toast.makeText(getApplicationContext(), "Wrong Answer 8", Toast.LENGTH_SHORT).show();
-                count=1;
-                setContentView(R.layout.activity_again);
-                TextView res=findViewById(R.id.result);
-                res.setText(getString(R.string.money2));
-                checkOne=false;
-                checkTwo=false;
-                checkThree=false;
-                checkFour=false;
             }
         }
     }
@@ -279,6 +244,119 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
+    }
+    public void submit(View view)
+    {
+        int cntrSubmit=control();
+        TextView editSubmit=findViewById(R.id.edit);
+        setContentView(R.layout.activity_again);
+        TextView res=findViewById(R.id.result);
+
+        if(count==1) {
+            if (cntrSubmit==1) {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money8), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money8));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money9), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money9));
+            }
+        }
+        else if(count==2) {
+            if (cntrSubmit == 2)
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money7), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money7));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money8), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money8));
+            }
+        }
+        else if(count==3){
+            if (cntrSubmit == 1)
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money6), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money6));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money7), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money7));
+            }
+        }
+        else if(count==4) {
+            if (cntrSubmit == 1)
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money5), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money5));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money6), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money6));
+            }
+        }
+        else if(count==5) {
+            if (cntrSubmit == 1)
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money4), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money4));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money5), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money5));
+            }
+        }
+        else if(count==6) {
+            if (cntrSubmit == 3)
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money3), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money3));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money4), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money4));
+            }
+        }
+        else if(count==7) {
+            String s=editSubmit.getText().toString();
+            if(s.equalsIgnoreCase("Sir Walter Raleigh"))
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money2), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money2));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money3), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money3));
+            }
+        }
+        else if(count==8) {
+            CheckBox chk1=findViewById(R.id.checkbox_1);
+            CheckBox chk2=findViewById(R.id.checkbox_2);
+            CheckBox chk3=findViewById(R.id.checkbox_3);
+            CheckBox chk4=findViewById(R.id.checkbox_4);
+            if(chk1.isChecked() && chk4.isChecked() && !chk2.isChecked() && !chk3.isChecked())
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money1), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money1));
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Your result " + getString(R.string.money2), Toast.LENGTH_SHORT).show();
+                res.setText(getString(R.string.money2));
+            }
+        }
+        checkOne=false;
+        checkTwo=false;
+        checkThree=false;
+        checkFour=false;
+
     }
     public int control()
     {
@@ -334,5 +412,14 @@ public class MainActivity extends AppCompatActivity {
     public void again(View view)
     {
         setContentView(R.layout.activity_question);
+        count=1;
+        optionOne=false;
+        optionTwo=false;
+        optionThree=false;
+        optionFour=false;
+        checkOne=false;
+        checkTwo=false;
+        checkThree=false;
+        checkFour=false;
     }
 }

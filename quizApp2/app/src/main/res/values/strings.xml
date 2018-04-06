@@ -69,5 +69,7 @@
     <string name="answer">Answer</string>
     <string name="start">Start</string>
     <string name="name_app">Quiz Game</string>
+    <string name="submit">SUBMIT</string>
+
 
 </resources>
