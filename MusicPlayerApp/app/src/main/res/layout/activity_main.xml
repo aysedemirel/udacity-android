@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.udacityproject.android.musicplayerapp.MainActivity">
+
+    <TextView
+        android:id="@+id/pop"
+        style="@style/CategoryStyle"
+        android:background="@color/category_pop"
+        android:text="@string/category_pop"
+        android:onClick="openNumberList"/>
+
+    <TextView
+        android:id="@+id/hiphop"
+        style="@style/CategoryStyle"
+        android:background="@color/category_hiphop"
+        android:text="@string/category_hiphop" />
+
+    <TextView
+        android:id="@+id/rock"
+        style="@style/CategoryStyle"
+        android:background="@color/category_rock"
+        android:text="@string/category_rock" />
+
+    <TextView
+        android:id="@+id/classic"
+        style="@style/CategoryStyle"
+        android:background="@color/category_classic"
+        android:text="@string/category_classic" />
+
+    <TextView
+        android:id="@+id/jazz"
+        style="@style/CategoryStyle"
+        android:background="@color/category_jazz"
+        android:text="@string/category_jazz" />
+
+    <TextView
+        android:id="@+id/electronic"
+        style="@style/CategoryStyle"
+        android:background="@color/category_electronic"
+        android:text="@string/category_electronic" />
+
+</LinearLayout>
+</ScrollView>
