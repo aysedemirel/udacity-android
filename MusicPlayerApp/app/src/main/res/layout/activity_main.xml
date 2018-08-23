@@ -1,53 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/tan_background"
-    android:orientation="vertical"
-    tools:context="com.udacityproject.android.musicplayerapp.MainActivity">
+    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/pop"
-        style="@style/CategoryStyle"
-        android:background="@color/category_pop"
-        android:text="@string/category_pop"
-        android:onClick="openNumberList"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/hiphop"
-        style="@style/CategoryStyle"
-        android:background="@color/category_hiphop"
-        android:text="@string/category_hiphop" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#279aa0"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/rock"
-        style="@style/CategoryStyle"
-        android:background="@color/category_rock"
-        android:text="@string/category_rock" />
+            <TextView
+                android:id="@+id/song"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@color/category_pop"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="30dp"
+                android:text="@string/song"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#161519"
+                android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/classic"
-        style="@style/CategoryStyle"
-        android:background="@color/category_classic"
-        android:text="@string/category_classic" />
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:background="@color/category_hiphop"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="30dp"
+                android:text="@string/list"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#161519"
+                android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/jazz"
-        style="@style/CategoryStyle"
-        android:background="@color/category_jazz"
-        android:text="@string/category_jazz" />
+            <TextView
+                android:id="@+id/album"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/category_rock"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="30dp"
+                android:text="@string/album"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#161519"
+                android:textSize="24sp"/>
 
-    <TextView
-        android:id="@+id/electronic"
-        style="@style/CategoryStyle"
-        android:background="@color/category_electronic"
-        android:text="@string/category_electronic" />
+            <TextView
+                android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/category_classic"
+                android:paddingTop="30dp"
+                android:text="@string/last"
+                android:textAllCaps="true"
+                android:textColor="#161519"
+                android:textSize="24sp" />
 
+            <!--<TextView
+                android:id="@+id/artist"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/category_jazz"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="30dp"
+                android:text="@string/artist"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#161519"
+                android:textSize="24sp" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview_flavor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" />
 </LinearLayout>
-</ScrollView>

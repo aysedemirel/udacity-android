@@ -18,13 +18,40 @@ package com.udacityproject.android.musicplayerapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.udacityproject.android.musicplayerapp.R;
-
 public class MusicInfo extends AppCompatActivity {
+
+    private String songName;
+    private String artistName;
+    private int iconId;
+    public boolean playStop; // if it is true, song is playing
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.music_info);
     }
+
+    public MusicInfo(String vName, String vArtist, int iconId, boolean play)
+    {
+        this.songName = vName;
+        this.artistName = vArtist;
+        this.iconId = iconId;
+        this.playStop = play;
+    }
+
+    public String getSongName() {
+        return songName;
+    }
+
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public int getIconId() {
+        return iconId;
+    }
+
+    /*public boolean isPlayStop() {
+        return playStop;
+    }*/
 }
