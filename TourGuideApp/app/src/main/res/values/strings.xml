@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="explore">Place to Visit</string>
+    <string name="open">Open in New Tab</string>
+    <string name="collect_rose">Collect rose from gardens</string>
+    <string name="eat_fish">Eat fish near eğirdir lake</string>
+    <string name="eat_local_food">Eat local food(exp: fırın kebab)</string>
+    <string name="make_picnic">Make picnic near Kovada lake</string>
+    <string name="dogu_karadeniz">Doğu Karadeniz Pide Salonu(meat)</string>
+    <string name="ferah_pide">Ferah Kebab Salonu(kebab)</string>
+    <string name="haci_bekir">Hacı Bekir Pide Salonu(meat)</string>
+    <string name="meatball">Köfteci Yusuf(meatball)</string>
+    <string name="pizza">Pasaport Pizza</string>
+    <string name="uysal_family_rest">Uysal Aile Lokantası(Turkish home cooking)</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="activities">Activities</string>
+    <string name="rec_plan">Recommended Plan</string>
+    <string name="cave">Zindan Mağarası(Cave)</string>
+    <string name="egirdir">Eğirdir Gölü(Lake)</string>
+    <string name="rose_gardens">Rose Gardens</string>
+    <string name="kizildag">Kızıldağ Milli Parkı(Forest)</string>
+    <string name="kovada">Kovada Gölü(Lake)</string>
+    <string name="lavender_garden">Lavender Garden</string>
+    <string name="canyon">Yazılı Kanyon(Canyon)</string>
+    <string name="ancient_city">Pisidia Antiocheia Ancient City</string>
+    <string name="discover">Discover the nature</string>
+    <string name="see_around">See historic artifacts, remains\n" +
+                "Feel the Roman empire, visualize the gladiatorial wars</string>
+    <string name="eat_local">Eat local food</string>
+    <string name="paragliding">Paragliding in the Eğirdir lake</string>
+    <string name="camp">Camp near the Eğirdir lake</string>
+    <string name="get_carpet">Get the Isparta carpet</string>
+    <string name="buy_rose">Buy rose products</string>
+    <string name="money1">0</string>
+    <string name="money2">50</string>
+    <string name="money3">100</string>
+    <string name="unknown_money">\?</string>
+
+</resources>
