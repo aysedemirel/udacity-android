@@ -31,8 +31,7 @@ public class MusicInfo extends AppCompatActivity {
         setContentView(R.layout.music_info);
     }
 
-    public MusicInfo(String vName, String vArtist, int iconId, boolean play)
-    {
+    public MusicInfo(String vName, String vArtist, int iconId, boolean play) {
         this.songName = vName;
         this.artistName = vArtist;
         this.iconId = iconId;
@@ -50,8 +49,4 @@ public class MusicInfo extends AppCompatActivity {
     public int getIconId() {
         return iconId;
     }
-
-    /*public boolean isPlayStop() {
-        return playStop;
-    }*/
 }

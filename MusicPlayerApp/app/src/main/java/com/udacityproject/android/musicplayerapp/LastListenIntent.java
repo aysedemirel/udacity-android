@@ -12,13 +12,12 @@ public class LastListenIntent extends AppCompatActivity {
         setContentView(R.layout.last_listened);
 
         ArrayList<MusicInfo> androidFlavors = new ArrayList<>();
-        androidFlavors.add(new MusicInfo("Let Her Go", "Passenger", 2, false));
-        androidFlavors.add(new MusicInfo("Sensiz Ben", "Pera", 1, false));
-        androidFlavors.add(new MusicInfo("Üsküdara Giderken", "Katibim", 0, false));
+        androidFlavors.add(new MusicInfo(getString(R.string.songname1), getString(R.string.artistname1), 2, false));
+        androidFlavors.add(new MusicInfo(getString(R.string.songname2), getString(R.string.artistname2), 1, false));
+        androidFlavors.add(new MusicInfo(getString(R.string.songname3), getString(R.string.artistname3), 0, false));
 
         SongAdapter songAdapter = new SongAdapter(this, androidFlavors);
 
-        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = findViewById(R.id.listview_last_listened);
         listView.setAdapter(songAdapter);
 

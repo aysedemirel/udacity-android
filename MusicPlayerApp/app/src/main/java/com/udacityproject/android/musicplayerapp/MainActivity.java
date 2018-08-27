@@ -19,29 +19,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<MusicInfo> androidFlavors = new ArrayList<>();
-        androidFlavors.add(new MusicInfo("Let Her Go", "Passenger", 1, false));
-        androidFlavors.add(new MusicInfo("Sensiz Ben", "Pera", 2, false));
-        androidFlavors.add(new MusicInfo("Üsküdara Giderken", "Katibim", 0, false));
+        androidFlavors.add(new MusicInfo(getString(R.string.songname1), getString(R.string.artistname1), 1, false));
+        androidFlavors.add(new MusicInfo(getString(R.string.songname2), getString(R.string.artistname2), 2, false));
+        androidFlavors.add(new MusicInfo(getString(R.string.songname3), getString(R.string.artistname3), 0, false));
 
         SongAdapter songAdapter = new SongAdapter(this, androidFlavors);
 
-        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = findViewById(R.id.listview_flavor);
         listView.setAdapter(songAdapter);
 
-
-        // open in a new screen
         TextView songs = findViewById(R.id.song);
 
-        // Set a click listener on that View
         songs.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
                 Intent songsIntent = new Intent(MainActivity.this, SongIntent.class);
-
-                // Start the new activity
                 startActivity(songsIntent);
             }
         });
@@ -63,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent albumIntent = new Intent(MainActivity.this, AlbumIntent.class);
-                System.out.println("album arası");
                 startActivity(albumIntent);
             }
         });
@@ -78,17 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(lastIntent);
             }
         });
-
-       /* TextView artist = findViewById(R.id.artist);
-
-        artist.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent artistIntent = new Intent(MainActivity.this, ArtistIntent.class);
-
-                startActivity(artistIntent);
-            }
-        });*/
 
     }
 

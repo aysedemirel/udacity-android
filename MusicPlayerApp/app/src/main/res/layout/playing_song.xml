@@ -12,16 +12,16 @@
         <ImageView
             android:contentDescription="@string/back"
             android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/eject"
+            android:layout_width="@dimen/activity_playingsong_hw"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:background="@mipmap/ic_launcher_eject"
             />
 
         <ImageView
             android:contentDescription="@string/settings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/settings"
+            android:layout_width="@dimen/activity_playingsong_hw"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:background="@mipmap/ic_launcher_setting"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"/>
     </RelativeLayout>
@@ -30,13 +30,13 @@
         android:contentDescription="@string/picture"
         android:id="@+id/musicpic"
         android:layout_width="match_parent"
-        android:layout_height="178dp"
+        android:layout_height="@dimen/activity_playingsong_albumimg_h"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="45dp"
-        android:src="@drawable/music" />
+        android:layout_marginTop="@dimen/activity_playingsong_albumimg_margin"
+        android:src="@mipmap/ic_launcher_music" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -48,40 +48,40 @@
 
         <ImageView
             android:contentDescription="@string/favorite"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/star" />
+            android:layout_width="@dimen/activity_playingsong_hw"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:layout_margin="@dimen/activity_playingsong_button_margin"
+            android:background="@mipmap/ic_launcher_star" />
 
         <ImageView
-            android:contentDescription="@string/backward"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/backward" />
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:layout_margin="@dimen/activity_playingsong_button_margin"
+            android:background="@mipmap/ic_launcher_backward"
+            android:contentDescription="@string/backward" />
 
         <ImageView
             android:contentDescription="@string/play"
             android:id="@+id/play_in_playing_song"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/play"
+            android:layout_width="@dimen/activity_playingsong_hw"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:layout_margin="@dimen/activity_playingsong_button_margin"
+            android:background="@mipmap/ic_launcher_play"
             />
 
         <ImageView
             android:contentDescription="@string/forward"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/forward" />
+            android:layout_width="@dimen/activity_playingsong_hw"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:layout_margin="@dimen/activity_playingsong_button_margin"
+            android:background="@mipmap/ic_launcher_forward" />
 
         <ImageView
             android:contentDescription="@string/replay"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/reload" />
+            android:layout_width="@dimen/activity_playingsong_hw"
+            android:layout_height="@dimen/activity_playingsong_hw"
+            android:layout_margin="@dimen/activity_playingsong_button_margin"
+            android:background="@mipmap/ic_launcher_reload" />
     </LinearLayout>
 
     <SeekBar

@@ -12,13 +12,12 @@ public class PlayListIntent extends AppCompatActivity {
         setContentView(R.layout.play_list);
 
         ArrayList<PlayListInfo> androidFlavors = new ArrayList<>();
-        androidFlavors.add(new PlayListInfo("Classical", 1,2,3,4));
-        androidFlavors.add(new PlayListInfo("Electro", 2,3,1,4));
-        androidFlavors.add(new PlayListInfo("Rock", 3,4,1,2));
+        androidFlavors.add(new PlayListInfo(getString(R.string.songkind1), 1, 2, 3, 4));
+        androidFlavors.add(new PlayListInfo(getString(R.string.songkind2), 2, 3, 1, 4));
+        androidFlavors.add(new PlayListInfo(getString(R.string.songkind3), 3, 4, 1, 2));
 
         PlayListAdapter playlistAdapter = new PlayListAdapter(this, androidFlavors);
 
-        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = findViewById(R.id.listview_play_list);
         listView.setAdapter(playlistAdapter);
     }

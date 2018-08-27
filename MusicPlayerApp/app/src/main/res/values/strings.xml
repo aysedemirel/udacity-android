@@ -47,5 +47,28 @@
 
     <string name="picture">picture</string>
 
+    <string name="songname1">Let Her Go</string>
+
+    <string name="songname2">Sensiz Ben</string>
+
+    <string name="songname3">Üsküdara Giderken</string>
+
+    <string name="artistname1">Passenger</string>
+
+    <string name="artistname2">Pera</string>
+
+    <string name="artistname3">Katibim</string>
+
+    <string name="songkind1">Classical</string>
+
+    <string name="songkind2">Electro</string>
+
+    <string name="songkind3">Rock</string>
+
+    <string name="listname1">Recordings</string>
+
+    <string name="listname2">Download</string>
+
+    <string name="listname3">Classical</string>
 
 </resources>

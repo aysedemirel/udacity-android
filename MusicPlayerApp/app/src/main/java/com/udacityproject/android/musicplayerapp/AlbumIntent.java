@@ -11,18 +11,13 @@ public class AlbumIntent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.album_view);
 
-        System.out.print("album intent\n");
         ArrayList<AlbumInfo> androidFlavors = new ArrayList<>();
-        androidFlavors.add(new AlbumInfo("Recordings", 1));
-        androidFlavors.add(new AlbumInfo("Download", 2));
-        androidFlavors.add(new AlbumInfo("Classical", 3));
-
-        for(int i=0;i<androidFlavors.size();i++)
-            System.out.println("album:" + androidFlavors.get(i).getArtistName()+"   "+androidFlavors.get(i).getIconId());
+        androidFlavors.add(new AlbumInfo(getString(R.string.listname1), 1));
+        androidFlavors.add(new AlbumInfo(getString(R.string.listname2), 2));
+        androidFlavors.add(new AlbumInfo(getString(R.string.listname3), 3));
 
         AlbumAdapter albumAdapter = new AlbumAdapter(this, androidFlavors);
 
-        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = findViewById(R.id.listview_album);
         listView.setAdapter(albumAdapter);
 

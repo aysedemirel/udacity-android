@@ -12,7 +12,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class PlayListAdapter extends ArrayAdapter<PlayListInfo> {
-   // private static final String LOG_TAG = PlayListAdapter.class.getSimpleName();
 
     public PlayListAdapter(Activity context, ArrayList<PlayListInfo> androidFlavors) {
         super(context, 0, androidFlavors);
@@ -21,7 +20,6 @@ public class PlayListAdapter extends ArrayAdapter<PlayListInfo> {
     @Override
     @NonNull
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
-        // Check if the existing view is being reused, otherwise inflate the view
         int icon;
         View listItemView = convertView;
         if (listItemView == null) {
@@ -29,16 +27,11 @@ public class PlayListAdapter extends ArrayAdapter<PlayListInfo> {
                     R.layout.playlist_view, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
         PlayListInfo currentAndroidFlavor = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = listItemView.findViewById(R.id.play_list_name);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
-        nameTextView.setText( currentAndroidFlavor.getListName());
+        nameTextView.setText(currentAndroidFlavor.getListName());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
         ImageView icon1 = listItemView.findViewById(R.id.album1);
         icon = currentAndroidFlavor.getIcon1Id();
         setIcon(icon, icon1);
@@ -60,13 +53,13 @@ public class PlayListAdapter extends ArrayAdapter<PlayListInfo> {
 
     private void setIcon(int iconId, ImageView iconView) {
         if (iconId == 1) {
-            iconView.setImageResource(R.drawable.background2);
+            iconView.setImageResource(R.mipmap.ic_launcher_background1);
         } else if (iconId == 2) {
-            iconView.setImageResource(R.drawable.background1);
+            iconView.setImageResource(R.mipmap.ic_launcher_background2);
         } else if (iconId == 3)
-            iconView.setImageResource(R.drawable.background3);
+            iconView.setImageResource(R.mipmap.ic_launcher_background3);
         else {
-            iconView.setImageResource(R.drawable.music);
+            iconView.setImageResource(R.mipmap.ic_launcher_music);
         }
     }
 }

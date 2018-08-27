@@ -9,20 +9,20 @@
     <ImageView
         android:contentDescription="@string/song"
         android:id="@+id/albumpic"
-        android:layout_height="51dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_width="46dp"
-        android:src="@drawable/music" />
+        android:layout_height="@dimen/activity_musicinfo_image_h"
+        android:layout_marginBottom="@dimen/activity_musicinfo_image_margin"
+        android:layout_marginEnd="@dimen/activity_musicinfo_image_margin"
+        android:layout_marginLeft="@dimen/activity_musicinfo_image_margin"
+        android:layout_marginRight="@dimen/activity_musicinfo_image_margin"
+        android:layout_marginStart="@dimen/activity_musicinfo_image_margin"
+        android:layout_marginTop="@dimen/activity_musicinfo_image_margin"
+        android:layout_width="@dimen/activity_musicinfo_image_w"
+        android:src="@mipmap/ic_launcher_music" />
 
     <TextView
         android:id="@+id/songname"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="@dimen/activity_musicinfo_songtext_margin"
         android:layout_toEndOf="@+id/albumpic"
         android:layout_toRightOf="@id/albumpic"
         android:layout_width="wrap_content"
@@ -45,5 +45,5 @@
         android:layout_alignBottom="@+id/albumpic"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/play" />
+        android:src="@mipmap/ic_launcher_play" />
 </RelativeLayout>

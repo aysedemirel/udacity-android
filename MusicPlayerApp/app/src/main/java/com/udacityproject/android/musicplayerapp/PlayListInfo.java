@@ -17,8 +17,7 @@ public class PlayListInfo extends AppCompatActivity {
         setContentView(R.layout.playlist_view);
     }
 
-    public PlayListInfo(String lName, int i1, int i2, int i3, int i4)
-    {
+    public PlayListInfo(String lName, int i1, int i2, int i3, int i4) {
         this.listName = lName;
         this.icon1Id = i1;
         this.icon2Id = i2;
