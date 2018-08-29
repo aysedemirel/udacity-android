@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Book-Inventory App</string>
+    <string name="enter_sentence">Start to add some books....</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="quality">Quality</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_phone">Supplier Phone</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="delete_all_books">Delete All Books</string>
+    <string name="save">Save</string>
+    <string name="contact_supplier">Contact Supplier</string>
+    <string name="delete">Delete</string>
+    <string name="add_a_book">Add a Book</string>
+    <string name="edit_book">Edit Book</string>
+    <string name="required">Required</string>
+    <string name="price_cannot_be_negative">Price cannot be negative</string>
+    <string name="quantity_cannot_be_negative">Quantity cannot be negative</string>
+    <string name="editor_insert_book_failed">Error while saving book</string>
+    <string name="editor_insert_book_successful">Book Saved</string>
+    <string name="editor_update_book_failed">Error with updating pet</string>
+    <string name="editor_update_book_successful">Book Updated</string>
+    <string name="error_deleting_book">Error while deleting book</string>
+    <string name="book_deleted">Book Deleted</string>
+    <string name="discard_changes_and_quit_editing">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="delete_this_book">Delete this Book?</string>
+    <string name="error_while_deleting_books">Error while deleting books</string>
+    <string name="all_books_deleted">All books deleted</string>
+    <string name="cancel">Cancel</string>
+    <string name="books_var">books</string>
+    <string name="product_name_var">product_name</string>
+    <string name="price_var">price</string>
+    <string name="quantity_var">quantity</string>
+    <string name="supplier_name_var">supplier_name</string>
+    <string name="supplier_phone_number_var">supplier_phone_number</string>
+    <string name="edit">Edit</string>
+    <string name="sale">Sale</string>
+
+</resources>
